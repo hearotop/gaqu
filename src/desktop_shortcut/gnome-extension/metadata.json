@@ -1,0 +1,8 @@
+{
+  "uuid": "desktop-shortcut@hearotop.github.io",
+  "name": "Desktop Shortcut",
+  "description": "Add an “Add to Desktop” action to application menus.",
+  "shell-version": ["50"],
+  "url": "https://github.com/hearotop/desktop-shortcut",
+  "gettext-domain": "desktop-shortcut@hearotop.github.io"
+}

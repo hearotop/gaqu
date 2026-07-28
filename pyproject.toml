@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-shortcut"
+version = "0.1.0"
+description = "Create and maintain Ubuntu desktop application shortcuts"
+requires-python = ">=3.10"
+license = {text = "GPL-2.0-or-later"}
+authors = [{name = "Desktop Shortcut contributors"}]
+
+[project.scripts]
+desktop-shortcut = "desktop_shortcut.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+desktop_shortcut = [
+    "systemd/*.service",
+    "systemd/*.timer",
+    "gnome-extension/*.js",
+    "gnome-extension/*.json",
+    "gnome-extension/po/*.po",
+    "gnome-extension/po/*.pot",
+]
