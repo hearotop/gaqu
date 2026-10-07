@@ -1,6 +1,0 @@
-[Unit]
-Description=Synchronize Ubuntu desktop application shortcuts
-
-[Service]
-Type=oneshot
-ExecStart=@EXECUTABLE@ scan

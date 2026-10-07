@@ -1,0 +1,6 @@
+[Unit]
+Description=Synchronize GNOME application shortcuts
+
+[Service]
+Type=oneshot
+ExecStart=@EXECUTABLE@ scan

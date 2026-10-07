@@ -1,0 +1,54 @@
+# Simplified Chinese translations for GAQU.
+# Copyright (C) 2026 GAQU contributors
+# This file is distributed under the same license as GAQU.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GAQU 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-28 00:00+0800\n"
+"Last-Translator: GAQU contributors\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: extension.js
+msgid "Add to Desktop"
+msgstr "添加到桌面"
+
+#: extension.js
+msgid "GAQU"
+msgstr "GAQU"
+
+#: extension.js
+#, javascript-format
+msgid "“%s” was added to the desktop"
+msgstr "已将“%s”添加到桌面"
+
+#: extension.js
+msgid "Unable to Create Desktop Shortcut"
+msgstr "无法创建桌面快捷方式"
+
+#: extension.js
+msgid "Update Icon"
+msgstr "更换图标"
+
+#: extension.js
+msgid "Choose a New Icon"
+msgstr "选择新图标"
+
+#: extension.js
+#, javascript-format
+msgid "“%s” icon was updated"
+msgstr "已更新“%s”的图标"
+
+#: extension.js
+msgid "The app grid will refresh when opened"
+msgstr "应用网格将在打开时刷新"
+
+#: extension.js
+msgid "Unable to Update Icon"
+msgstr "无法更新图标"

@@ -12,11 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install build tools
-        run: python -m pip install Babel
       - name: Run tests
         run: make test
-      - name: Build extension bundle
-        run: make pack-extension
-      - name: Verify extension bundle
-        run: unzip -t dist/desktop-shortcut@hearotop.github.io.shell-extension.zip

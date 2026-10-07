@@ -24,7 +24,7 @@ out and back in before reporting results because GJS modules are cached.
 English strings in `extension.js` are the translation source. Update the POT
 file when strings change, merge it into each PO file, and keep translator
 credits in the PO headers. New language files are welcome under
-`src/desktop_shortcut/gnome-extension/po/`.
+`src/gaqu/gnome-extension/po/`.
 
 ## License
 

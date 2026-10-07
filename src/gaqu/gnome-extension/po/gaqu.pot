@@ -1,0 +1,50 @@
+# GAQU translation template.
+# Copyright (C) 2026 GAQU contributors
+# This file is distributed under the same license as GAQU.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GAQU 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-28 00:00+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js
+msgid "Add to Desktop"
+msgstr ""
+
+#: extension.js
+msgid "GAQU"
+msgstr ""
+
+#: extension.js
+#, javascript-format
+msgid "“%s” was added to the desktop"
+msgstr ""
+
+#: extension.js
+msgid "Unable to Create Desktop Shortcut"
+msgstr ""
+
+#: extension.js
+msgid "Update Icon"
+msgstr ""
+
+#: extension.js
+msgid "Choose a New Icon"
+msgstr ""
+
+#: extension.js
+#, javascript-format
+msgid "“%s” icon was updated"
+msgstr ""
+
+#: extension.js
+msgid "The app grid and dock icons have been updated in real time"
+msgstr ""
+
+#: extension.js
+msgid "Unable to Update Icon"
+msgstr ""

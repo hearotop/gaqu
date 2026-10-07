@@ -4,7 +4,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from desktop_shortcut.core import Application, create_shortcut, desktop_dir, read_application
+from gaqu.cli import main
+from gaqu.core import Application, create_shortcut, desktop_dir, read_application
 
 
 SAMPLE = """[Desktop Entry]
@@ -42,12 +43,19 @@ class CoreTests(unittest.TestCase):
             source = root / "example.desktop"
             source.write_text(SAMPLE)
             app = Application("example", "Example", source)
-            with patch("desktop_shortcut.core.desktop_dir", return_value=root / "Desktop"):
+            with patch("gaqu.core.desktop_dir", return_value=root / "Desktop"):
                 target = create_shortcut(app)
             self.assertEqual(target.read_text(), SAMPLE)
             self.assertTrue(target.stat().st_mode & 0o100)
 
+    def test_update_icon_cli(self):
+        with patch("gaqu.cli.update_icon") as update_icon:
+            self.assertEqual(
+                main(["icon", "/tmp/app.desktop", "/tmp/icon.svg"]),
+                0,
+            )
+        update_icon.assert_called_once_with("/tmp/app.desktop", "/tmp/icon.svg")
+
 
 if __name__ == "__main__":
     unittest.main()
-

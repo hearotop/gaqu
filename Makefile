@@ -1,5 +1,5 @@
-UUID := desktop-shortcut@hearotop.github.io
-EXTENSION_DIR := src/desktop_shortcut/gnome-extension
+UUID := gaqu
+EXTENSION_DIR := src/gaqu/gnome-extension
 DIST_DIR := dist
 STAGING_DIR := $(DIST_DIR)/$(UUID)
 
@@ -16,10 +16,10 @@ pack-extension:
 	pybabel compile \
 		--input-file=$(EXTENSION_DIR)/po/zh_CN.po \
 		--output-file=$(STAGING_DIR)/locale/zh_CN/LC_MESSAGES/$(UUID).mo
-	cd $(STAGING_DIR) && zip -9r ../$(UUID).shell-extension.zip .
+	cd $(STAGING_DIR) && zip -9r ../$(UUID).zip .
 
 install-extension: pack-extension
-	gnome-extensions install --force $(DIST_DIR)/$(UUID).shell-extension.zip
+	gnome-extensions install --force $(DIST_DIR)/$(UUID).zip
 
 clean:
 	rm -rf $(DIST_DIR)

@@ -1,0 +1,7 @@
+{
+  "uuid": "gaqu",
+  "name": "GAQU",
+  "description": "Add an \"Add to Desktop\" action to application menus.",
+  "shell-version": ["50"],
+  "gettext-domain": "gaqu"
+}
