@@ -10,4 +10,5 @@ dist/
 .idea/
 .ruff_cache/
 tests/
+.vscode/
 
